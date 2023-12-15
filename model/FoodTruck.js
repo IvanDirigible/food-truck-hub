@@ -1,7 +1,7 @@
 //grabs data types for database
-const {Model, DataTypes} = require ("sequelize")
+const {Model, DataTypes} = require ("sequelize");
 //pull from config route
-const sequelize = require ("../config/connection")
+const sequelize = require ("../config/connection");
 
 //create class model to extend off the base
 class FoodTruck extends Model {}
@@ -10,23 +10,30 @@ class FoodTruck extends Model {}
 FoodTruck.init (
     {
         id: {
-            type: DateTypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
         },
         name: {
-            type: DateTypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         user_id: {
-            type: Datatypes.INTEGER,
+            type: DataTypes.INTEGER,
             references: {
                 model: "user",
-                key: "id"
+                key: "id",
             },
         },
     },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: "foodtruck",
+    }
 );
 
 //allows the module to be used in other files
