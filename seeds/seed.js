@@ -1,5 +1,5 @@
 const sequelize = require("../config/connection");
-const { User, FoodTruck } =- require("../model");
+const { User, FoodTruck } = require("../model");
 
 const userData = require("./userData.json");
 const foodtruckData = require("./foodtruckData.json");
@@ -17,7 +17,6 @@ const seedDatabase = async () => {
             ...foodtruck, user_id: users[Math.floor(Math.random() * users.length)].id,
         });
     }
-
     process.exit(0);
 };
 
