@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grub on the Go</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .hero.is-primary {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100vh;
+        } 
+    </style>
+</head>
+
+<body>
+    <!-- Hero section -->
+    <section class="hero is-primary is-fullheight" style="background-color: #540B0E;">
+        <div class="hero-head">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-2">
+                        <img src="assets/src/foodtruck.png" alt="Grub on the Go" style="max-width: 100%;">
+                    </div>
+                    <div class="column is-8">
+                        <div class="is-centered has-text-centered">    
+                            <h1 class="title">
+                                Grub On The Go
+                            </h1>
+                            <h2 class="subtitle">
+                                Delicious food on wheels!
+                            </h2>                    
+                            <a href="#menu" class="button is-light is-medium" style="background-color: white;">Check out our menu</a>
+                        </div>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu section -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2 class="title has-text-centered">Our Menu</h2>
+            <!-- Your menu items can go here -->
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title">Beef Taco</p>
+                            <p class="subtitle">$8.99</p>
+                            <div class="content">
+                                A delicious taco with all the fixings.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title">Chicken Taco Combo</p>
+                            <p class="subtitle">$10.99</p>
+                            <div class="content">
+                                Two tacos with your choice of filling.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <script src="script.js"></script>
+    </footer>
+</body>
+
+</html>
