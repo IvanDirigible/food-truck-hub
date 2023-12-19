@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,14 +8,14 @@
     <title>{{pageTitle}}</title>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="{{customStyles}}">
-</head>
+</head> --}}
 
 <body>
     <div class="container">
         <div class="columns is-justify-content-center">
             <div class="column is-6-tablet is-5-desktop is-4-widescreen is-3-fullh">
 
-                {{#if showLoginForm}}
+                {{!-- {{#if showLoginForm}} --}}
                 <!-- Login Form -->
                 <form>
                     <h3 class="title has-text-black">Login</h3>
@@ -26,16 +26,16 @@
                         <figure class="avatar">
                             <img src="https://via.placeholder.com/150">
                         </figure>
-                        <form>
+                        <form class="login-form">
                             <div class="field">
                                 <div class="control">
-                                    <input class="input is-large" type="email" placeholder="Your Email" autofocus="">
+                                    <input id="email-login" class="input is-large" type="email" placeholder="Your Email" autofocus="">
                                 </div>
                             </div>
 
                             <div class="field">
                                 <div class="control">
-                                    <input class="input is-large" type="password" placeholder="Your Password">
+                                    <input id="password-login" class="input is-large" type="password" placeholder="Your Password">
                                 </div>
                             </div>
                             <div class="field">
@@ -44,7 +44,7 @@
                                     Remember me
                                 </label>
                             </div>
-                            <button id="loginButton" class="button is-block is-info is-large is-fullwidth">
+                            <button id="loginButton" class="button is-block is-info is-large is-fullwidth login-form">
                                 Login <i class="fa fa-sign-in" aria-hidden="true"></i>
                             </button>
                             <button onclick="showSignupForm()" class="button is-block is-info is-large is-fullwidth">
@@ -57,9 +57,9 @@
                         <a href="../">Need Help?</a>
                     </p>
                 </form>
-                {{/if}}
+                {{!-- {{/if}} --}}
 
-                {{#if showSignupForm}}
+                {{!-- {{#if showSignupForm}}
                 <!-- Signup Form -->
                 <form method="POST" action="{{formAction}}" class="box p-5">
                     <h3 class="title has-text-black">Sign Up</h3>
@@ -112,7 +112,7 @@
         </div>
     </div>
 
-    <script async type="text/javascript" src="../js/bulma.js"></script>
+    <script async type="text/javascript" src="../public/js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
     <script>
         function showSignupForm() {
@@ -149,3 +149,5 @@
 
 </html>
 
+
+<h1>Well Hello There!</h1> --}}
