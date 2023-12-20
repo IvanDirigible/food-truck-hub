@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
             foodtrucks,
 
         });
-    } catch (err) {
+      } catch (err) {
         console.log("Error Here");
         console.error(err);
         res.status(500).json(err);
