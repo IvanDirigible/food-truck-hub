@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
 
         const foodtrucks = foodtruckData.map((foodtruck) => foodtruck.get({ plain: true }));
 
-        res.render("/", {
+        res.render("cover", {
             foodtrucks,
 
         });
