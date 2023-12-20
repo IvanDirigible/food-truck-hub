@@ -1,0 +1,61 @@
+<!-- Signup Form -->
+{{!-- <form method="POST" action="{{formAction}}" class="box p-5"> --}}
+<form class="box p-5 signup-form">
+    <h3 class="title has-text-black">Sign Up</h3>
+    <hr class="login-hr">
+    <p class="subtitle has-text-black">Please sign up to create an account.</p>
+    <div class="field">
+        <label class="is-block mb-4">
+            <span class="is-block mb-2">User Name</span>
+            <input
+                required
+                type="name"
+                id="name-signup"
+                class="input"
+                minlength="6"
+                placeholder="(must be 6+ chars)"
+            />
+        </label>
+
+        <label class="is-block mb-4">
+            <span class="is-block mb-2">Email address</span>
+            <input
+                required
+                type="email"
+                id="email-signup"
+                class="input"
+                placeholder="joe.bloggs@example.com"
+            />
+        </label>
+
+        <label class="is-block mb-4">
+            <span class="is-block mb-2">Password</span>
+            <input
+                name="password"
+                type="password"
+                id="password-signup"
+                class="input"
+                minlength="6"
+                placeholder="(must be 6+ chars)"
+                required
+            />
+        </label>
+
+        <div class="mb-4">
+            <label>
+                <input type="checkbox" name="tos" value="yes" required />
+                <span>I agree with the Terms</span>
+            </label>
+        </div>
+
+        <div class="mb-4">
+            <button type="submit" class="button {{buttonStyle}}">submit</button>
+        </div>
+
+        <div>
+            <div class="is-size-7 has-text-right">
+                {{linkText}}<a href="{{linkHref}}" class="has-text-dark">{{linkAnchorText}}</a>
+            </div>
+        </div>
+    </div>
+</form>
