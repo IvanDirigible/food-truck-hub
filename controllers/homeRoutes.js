@@ -53,8 +53,8 @@ router.get('/foodtruck/:id', async (req, res) => {
 router.get('login', (req, res) => {
     res.render('login');
 });
-router.get('cover', (req, res) => {
-    res.render('cover');
+router.get('/', (req, res) => {
+    res.render('/');
 });
 
 module.exports = router;
