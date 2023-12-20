@@ -6,7 +6,7 @@ const sequelize = require ("../config/connection");
 //create class model to extend off the base
 class FoodTruck extends Model {}
 
-//creating object for FoofTruck
+//creating object for FoodTruck
 FoodTruck.init (
     {
         id: {
@@ -17,6 +17,7 @@ FoodTruck.init (
         },
         name: {
             type: DataTypes.STRING,
+            unique: true,
             allowNull: false,
         },
         user_id: {

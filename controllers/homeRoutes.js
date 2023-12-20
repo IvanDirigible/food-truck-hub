@@ -19,6 +19,7 @@ router.get('/', async (req, res) => {
 
         });
     } catch (err) {
+        // Error checking - REMOVE LATER
         console.log("Error Here");
         console.error(err);
         res.status(500).json(err);
@@ -43,6 +44,7 @@ router.get('/foodtruck/:id', async (req, res) => {
 
         });
     } catch (err) {
+        // Error checking - REMOVE LATER
         console.log("Error Over Here");
         res.status(500).json(err);
     }
@@ -50,8 +52,12 @@ router.get('/foodtruck/:id', async (req, res) => {
 
 //middleware goes here
 
-router.get('login', (req, res) => {
+router.get('/login', (req, res) => {
     res.render('login');
+});
+
+router.get('/signup', (req, res) => {
+    res.render('signup');
 });
 
 module.exports = router;
