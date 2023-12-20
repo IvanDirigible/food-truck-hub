@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
 
         const foodtrucks = foodtruckData.map((foodtruck) => foodtruck.get({ plain: true }));
 
-        res.render("homepage", {
+        res.render("cover", {
             foodtrucks,
 
         });
@@ -52,9 +52,6 @@ router.get('/foodtruck/:id', async (req, res) => {
 
 router.get('login', (req, res) => {
     res.render('login');
-});
-router.get('/', (req, res) => {
-    res.render('/');
 });
 
 module.exports = router;
