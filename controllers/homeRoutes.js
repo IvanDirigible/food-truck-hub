@@ -60,4 +60,8 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
+router.get('/foodtruck', (req, res) => {
+    res.render('foodtruck');
+});
+
 module.exports = router;

@@ -67,9 +67,22 @@
                         <h1 class="title is-2">
                             Food Truck hub
                         </h1>
-                        <h2 class="subtitle is-4">
-                            Let this cover page describe a product or service.
-                        </h2>
+                        
+                        {{#each foodtrucks as |foodtruck| }}
+                        <div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <a href="/foodtruck/{{foodtruck.id}}">{{foodtruck.name}}</a>
+    </h2>
+    <p>Created by {{foodtruck.user.name}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{foodtruck.description}}
+    </p>
+  </div>
+</div>
+{{/each}}
                         <br>
                         <p class="has-text-centered">
                             <a class="button is-medium is-info is-outlined">
