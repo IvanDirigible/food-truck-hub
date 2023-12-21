@@ -1,0 +1,7 @@
+{
+  {{#each cssFiles}}
+    <link rel="stylesheet" href="{{this}}">
+{{/each}}
+
+
+}

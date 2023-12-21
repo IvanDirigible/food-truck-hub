@@ -1,0 +1,102 @@
+/* Resetting default margins and paddings */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set Open Sans as default font */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Styling for images */
+img {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Styling for the hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Styling for the navigation */
+.navbar {
+    background-color: #9E2A2B; /* desired background color */
+}
+
+.navbar-brand img {
+    max-height: 50px; /* desired height for the logo */
+}
+
+.navbar-burger {
+    color: #333; /* Set your desired color */
+}
+
+.navbar-end a {
+    color: #333; /* Set your desired link color */
+    font-weight: bold;
+    margin-right: 10px; /* Adjust spacing between links */
+}
+
+.navbar-end a:hover {
+    color: #777;
+}
+
+/* Styling for the hero body content */
+.hero-body {
+    padding: 3rem 0; 
+}
+
+.title {
+    font-size: 3rem; 
+    font-weight: bold;
+    color: #333; 
+}
+
+.card {
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.card-title a {
+    color: #333; 
+}
+
+.card-text {
+    color: #666; 
+}
+
+
+.button {
+    border-color: #540b0e; 
+    color: #9e2a2b; 
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #e09f3e; 
+    color: #fff; 
+}
+
+/* Styling for the footer */
+.hero-foot {
+    background-color: #f5f5f5; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+/* Styling for the footer text */
+.hero-foot ul li a {
+    color: #333; 
+}
+
+/* Styling for the bottom navigation */
+.hero-foot ul li {
+    display: inline;
+    margin: 0 10px; 
+}
