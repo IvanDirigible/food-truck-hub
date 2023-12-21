@@ -2,16 +2,19 @@
     {
         "name": "Tasty Joe's",
         "description": "Best place on 5th avenue!",
-        "image": ""
+        "image": "",
+        "user_id": 2
     },
     {
         "name": "Wizard Pizza",
         "description": "Our pepperoni pizza is magical",
-        "image": ""
+        "image": "",
+        "user_id": 1
     },
     {
         "name": "Taco Nirvana",
         "description": "Welcome to taco enlightenment",
-        "image": ""
+        "image": "",
+        "user_id": 3
     }
 ]
