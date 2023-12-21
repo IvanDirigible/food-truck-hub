@@ -13,11 +13,10 @@ const seedDatabase = async () => {
         returning: true,
     });
 
-    for (const foodtruck of foodtruckData) {
-        await FoodTruck.create({
-            ...foodtruck, user_id: users[Math.floor(Math.random() * users.length)].id,
-        });
-    }
+    const foodtrucks = await FoodTruck.bulkCreate(foodtruckData, {
+        individualHooks: true,
+        returning: true,        
+    });
 
     const menus = await Menu.bulkCreate(menuData, {
         individualHooks: true,
