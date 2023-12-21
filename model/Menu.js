@@ -16,7 +16,8 @@ Menu.init(
             allowNull: false,
         },
         price: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.STRING,
+            // isNumeric: true,
             allowNull: false,
         },
         foodtruck_id: {
