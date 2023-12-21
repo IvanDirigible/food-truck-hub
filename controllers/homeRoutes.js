@@ -20,9 +20,6 @@ router.get('/', async (req, res) => {
 
         });
     } catch (err) {
-        // Error checking - REMOVE LATER
-        console.log("Error Here");
-        console.error(err);
         res.status(500).json(err);
     }
 });
@@ -45,9 +42,6 @@ router.get('/foodtruck/:id/profile', withAuth, async (req, res) => {
 
         });
     } catch (err) {
-        // Error checking - REMOVE LATER
-        console.log("Error Over Here");
-        console.error(err);
         res.status(500).json(err);
     }
 });
@@ -76,7 +70,6 @@ router.get(`/foodtruck/:id/menu`, async (req, res) => {
         res.status(500).json(err);
     }
 });
-//middleware goes here
 
 router.get('/login', (req, res) => {
     res.render('login');
@@ -85,11 +78,5 @@ router.get('/login', (req, res) => {
 router.get('/signup', (req, res) => {
     res.render('signup');
 });
-
-// router.get('/foodtruck', (req, res) => {
-//     res.render('foodtruck');
-// });
-
-
 
 module.exports = router;
