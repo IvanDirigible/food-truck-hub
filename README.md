@@ -1,10 +1,10 @@
-# food-truck-hub
+# Grub-On-The-Go
 
 A central location for food truck owners to post their truck information.
 
 ## Description
 
-Food Truck Hub was designed as a central location for food truck owners to post information about their trucks that include: the name of their truck, their menu, hours of operation, and planned location of operation. This would allow viewers of Food Truck Hub to find a specific food truck or discover new trucks they have yet to visit.
+Grub On The Go was designed as a central location for food truck owners to post information about their trucks that include: the name of their truck, their menu, hours of operation, and planned location of operation. This would allow viewers of Grub On The Go to find a specific food truck or discover new trucks they have yet to visit.
 
 ## Technologies Used
 -Node.js
