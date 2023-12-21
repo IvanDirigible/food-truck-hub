@@ -96,7 +96,17 @@
               </div>
             </div>
             <div class="content">
-              Your Content Here
+{{#each menuItems as |menu|}}
+    <div class="row mb-4" >
+        <div class="col-md-12">
+            <div class="card">
+                    <p class="card-text">{{menu.name}}</p>
+                    <p class="card-text">{{menu.price}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
               <div class="background-icon"><span class="icon-twitter"></span></div>
             </div>
           </div>
