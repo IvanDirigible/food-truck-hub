@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { FoodTruck, User } = require('../model');
+const { FoodTruck, User, Menu } = require('../model');
+const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
@@ -26,7 +27,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/foodtruck/:id', async (req, res) => {
+router.get('/foodtruck/:id/profile', withAuth, async (req, res) => {
     try {
         const foodtruckData = await FoodTruck.findByPk(req.params.id, {
             include: [
@@ -51,6 +52,30 @@ router.get('/foodtruck/:id', async (req, res) => {
     }
 });
 
+router.get(`/foodtruck/:id/menu`, async (req, res) => {
+    try {
+        const menuData = await Menu.findAll({
+            where: {
+                foodtruck_id: req.params.id,
+            },
+            include: [
+                {
+                    model: FoodTruck,
+                    attributes: ["name"],
+                },
+            ]
+        });
+
+        const menuItems = menuData.map((menu) => menu.get({ plain: true }));
+
+        res.render('menu', {
+            menuItems,
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json(err);
+    }
+});
 //middleware goes here
 
 router.get('/login', (req, res) => {
@@ -61,8 +86,10 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
-router.get('/foodtruck', (req, res) => {
-    res.render('foodtruck');
-});
+// router.get('/foodtruck', (req, res) => {
+//     res.render('foodtruck');
+// });
+
+
 
 module.exports = router;

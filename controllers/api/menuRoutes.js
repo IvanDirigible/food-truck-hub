@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { Menu } = require("../../model");
 const withAuth = require("../../utils/auth");
 
-router.post("/", async (req, res) => {
+router.post("/", withAuth, async (req, res) => {
     try {
         const menuData = await Menu.create({
             ...req.body,
@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
     }
 });
 
-router.put("/:menu_id", withAuth, async (req, res) => {
+router.put("/:foodtruck_id", withAuth, async (req, res) => {
     try {
         const menuData = await Menu.update({
             where: {
@@ -25,7 +25,7 @@ router.put("/:menu_id", withAuth, async (req, res) => {
         });
 
         if (!menuData) {
-            res.status(404).json({ message: "No menu item foudn with this id." });
+            res.status(404).json({ message: "No menu item found with this id." });
             return;
         }
 

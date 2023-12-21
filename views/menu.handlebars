@@ -1,8 +1,23 @@
 <!-- Menu section -->
 <section id="menu" class="section">
     <div class="container">
-        <h2 class="title has-text-centered">Our Menu</h2>
-        
+        <h2 class="title has-text-centered">{{foodtruck.name}}</h2>
+        <div class="card-body">
+                    <h2 class="card-title">
+                        Menu
+                    </h2>
+{{#each menuItems as |menu|}}
+    <div class="row mb-4" >
+        <div class="col-md-12">
+            <div class="card">
+                    <p class="card-text">{{menu.name}}</p>
+                    <p class="card-text">{{menu.price}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
+
         <!-- Your menu items can go here -->
         {{!-- <div class="columns">
             <div class="column">
