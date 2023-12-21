@@ -1,4 +1,14 @@
 {
+  "name": "food-truck-hub",
+  "version": "1.0.0",
+  "description": "A one-stop shop for local eats on wheels!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Project 2 - Group 4",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
