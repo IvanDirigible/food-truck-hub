@@ -24,7 +24,8 @@ FoodTruck.init (
             type: DataTypes.TEXT,
         },
         image: {
-            type: DataTypes.UUID,
+            type: DataTypes.STRING,
+            unique: true,
         },
         user_id: {
             type: DataTypes.INTEGER,
