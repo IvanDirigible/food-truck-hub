@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Philly Cheese Salad",
+        "price": "8.99",
+        "foodtruck_id": 1
+    },
+    {
+        "name": "Deep Dish Churros (3)",
+        "price": "9.99",
+        "foodtruck_id": 1
+    },
+    {
+        "name": "Fermented Lemonade",
+        "price": "4.99",
+        "foodtruck_id": 1
+    },
+    {
+        "name": "Wizardy Cheese Pizza",
+        "price": "10.99",
+        "foodtruck_id": 2
+    },
+    {
+        "name": "Prestidigitatious Pepperoni Pizza",
+        "price": "12.99",
+        "foodtruck_id": 2
+    },
+    {
+        "name": "Sorcerous Supreme Pizza",
+        "price": "15.99",
+        "foodtruck_id": 2
+    },
+    {
+        "name": "BBQ Jackfruit Taco",
+        "price": "3.99",
+        "foodtruck_id": 3
+    },
+    {
+        "name": "Impossible Burrito",
+        "price": "11.99",
+        "foodtruck_id": 3
+    },
+    {
+        "name": "Karma-Free Dessert Taco",
+        "price": "7.99",
+        "foodtruck_id": 3
+    }
+    
+]
