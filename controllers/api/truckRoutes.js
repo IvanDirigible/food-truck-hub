@@ -20,9 +20,6 @@ router.delete('/:id', withAuth, async (req, res) => {
         const foodtruckData = await FoodTruck.destroy({
             where: {
                 id: req.params.id,
-                name: req.params.name,
-                description: req.params.description,
-                image: req.params.image,
                 user_id: req.session.user_id,
             },
         });

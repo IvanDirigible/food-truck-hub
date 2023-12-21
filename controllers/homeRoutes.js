@@ -46,6 +46,7 @@ router.get('/foodtruck/:id', async (req, res) => {
     } catch (err) {
         // Error checking - REMOVE LATER
         console.log("Error Over Here");
+        console.error(err);
         res.status(500).json(err);
     }
 });
