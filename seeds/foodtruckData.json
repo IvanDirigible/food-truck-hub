@@ -2,13 +2,13 @@
     {
         "name": "Tasty Joe's",
         "description": "Best place on 5th avenue!",
-        "image": "foodtruck-image-1.png",
+        "image": "foodtruck-image-2.png",
         "user_id": 2
     },
     {
         "name": "Wizard Pizza",
         "description": "Our pepperoni pizza is magical",
-        "image": "foodtruck-image-2.png",
+        "image": "foodtruck-image-1.png",
         "user_id": 1
     },
     {
