@@ -1,0 +1,78 @@
+/* Global Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar styles */
+.navbar {
+  height: 6rem !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) !important;
+}
+
+.navbar-brand img {
+  max-height: 100%;
+}
+
+/* Card and image adjustments */
+.card {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content .media {
+  align-items: center;
+}
+
+.card-content .media .media-left .image {
+  border-radius: 50%;
+}
+
+/* Menu items layout */
+.row.mb-4 {
+  margin-bottom: 20px;
+}
+
+.col-md-12 .card {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+/* Social media icon */
+.background-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.background-icon .icon-twitter {
+  font-size: 20px;
+}
